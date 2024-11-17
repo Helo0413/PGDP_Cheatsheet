@@ -37,6 +37,15 @@ public class Main {
 
         }
 
+        int[][] rr = new int[][]{
+                {0, 3, 4},
+                {5, 7, 8}
+        };
+
+        System.out.println("x = 1, y = 0 rr[x][y] = " + rr[1][0] + " rr[y][x] = " + rr[0][1]);
+        // rr[x][y] = 5, rr[y][x] = 3!!!
+        // CONCLUSION: read arrays down and then right; Y FIRST THEN X!!!
+
         //Arrays.deepToString(array) delivers 2D array as String; For one dimensional arrays use Array.toString(tester)
         String s = Arrays.deepToString(tester);
 
